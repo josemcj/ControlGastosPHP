@@ -1,0 +1,108 @@
+@use "variables" as v;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$fuente;
+  font-size: 1.6rem;
+
+  // No se puede dar scroll
+  &.fijar-body {
+    overflow: hidden;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  color: v.$negro;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 90rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.btn {
+    background-color: v.$verde;
+    color: v.$blanco;
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background-color: v.$verdeClaro;
+    }
+}
+
+.btn-subrayado {
+  color: v.$negro;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  background-color: v.$transparente;
+  border: none;
+  border-bottom: 0.1rem solid v.$negro;
+  transition: .3s all ease;
+
+  &:hover {
+      color: v.$grisHover;
+      border-bottom-color: v.$grisHover;
+  }
+}
+
+.conjunto-botones {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+
+  i {
+      padding: 0;
+      margin-left: 1rem;
+  }
+}
+
+.centrar-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Guia
+.guia {
+  outline: v.$guia;
+}

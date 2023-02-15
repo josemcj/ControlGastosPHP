@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+
+.form_registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(60rem, 90%);
+    gap: 2rem;
+    padding: 5rem;
+    margin: 2rem 0;
+
+    // background-color: v.$grisOscuro;
+}
+
+.form__col {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__label {
+    width: 18%;
+    align-self: center;
+}
+
+.form__input {
+    width: 82%;
+
+    input, select {
+        outline: 0.1rem solid v.$grisInput;
+        padding: 1.2rem;
+        border-radius: 0.5rem;
+        border: none;
+        transition: .3s all ease;
+
+        &:focus {
+            outline: 0.1rem solid v.$grisOutline;
+        }
+    }
+
+    input {
+        width: 100%;
+
+        &::placeholder {
+            color: v.$grisOutline;
+        }
+    }
+}
+
+.form__cantidad {
+    position: relative;
+
+    .signo_cantidad {
+        margin: 0;
+        color: v.$grisOutline;
+        position: absolute;
+        // Centra el signo $ verticalmente con 1.2 rem a la izquierda
+        top: 50%;
+        left: 1.2rem;
+        transform: translate(-50%, -50%);
+    }
+
+    #cantidad {
+        padding-left: 2rem;
+    }
+}
+
+// Formulario de actualizar
+.form_actualizar-cantidad {
+    width: 50%;
+    padding: 0;
+}
+
+.form__input-100, .form__label-100 {
+    width: 100%;
+}
+
+.form__col-margin-top {
+    margin-top: 1rem;
+}

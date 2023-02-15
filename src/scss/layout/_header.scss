@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+
+header {
+    background-color: v.$amarillo;
+    padding: 5rem 0;
+    border-radius: 0 0 5rem 5rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .disponible {
+        font-size: 2.5rem;
+    }
+
+    .dinero {
+        font-weight: v.$extrabold;
+        font-size: 8rem;
+    }
+}
