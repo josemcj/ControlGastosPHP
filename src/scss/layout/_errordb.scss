@@ -1,0 +1,10 @@
+@use 'base/variables' as v;
+
+.contenedor-error-db {
+    height: 100vh;
+    justify-content: center;
+
+    .error-db {
+        font-weight: v.$extrabold;
+    }
+}
