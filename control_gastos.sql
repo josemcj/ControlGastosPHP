@@ -30,6 +30,16 @@ CREATE TABLE `disponible` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `disponible`
+--
+
+LOCK TABLES `disponible` WRITE;
+/*!40000 ALTER TABLE `disponible` DISABLE KEYS */;
+INSERT INTO `disponible` VALUES (1,0.00);
+/*!40000 ALTER TABLE `disponible` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `gastos`
 --
 
@@ -45,8 +55,17 @@ CREATE TABLE `gastos` (
   PRIMARY KEY (`id`),
   KEY `tipo` (`tipo`),
   CONSTRAINT `gastos_ibfk_1` FOREIGN KEY (`tipo`) REFERENCES `tipo` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=138 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `gastos`
+--
+
+LOCK TABLES `gastos` WRITE;
+/*!40000 ALTER TABLE `gastos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `gastos` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `tipo`
@@ -61,6 +80,16 @@ CREATE TABLE `tipo` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo`
+--
+
+LOCK TABLES `tipo` WRITE;
+/*!40000 ALTER TABLE `tipo` DISABLE KEYS */;
+INSERT INTO `tipo` VALUES (1,'Ingreso'),(2,'Egreso');
+/*!40000 ALTER TABLE `tipo` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -71,4 +100,4 @@ CREATE TABLE `tipo` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-14 22:33:31
+-- Dump completed on 2023-04-03 18:10:50
