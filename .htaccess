@@ -1,0 +1,5 @@
+# OCULTAR EXTENSION .PHP
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

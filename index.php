@@ -89,8 +89,8 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
             <p class="dinero">$<?php echo number_format($dineroDisponible['cantidad'], 2); ?></p>
             
             <div class="conjunto-botones">
-                <a href="/cantidad.php" class="btn-subrayado">Modificar cantidad<i class="fa-solid fa-pen-to-square"></i></a>
-                <a href="/crear.php" class="btn">Agregar registro</a>
+                <a href="/cantidad" class="btn-subrayado">Modificar cantidad<i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="/crear" class="btn">Agregar registro</a>
             </div>
         </div>
     </header>
@@ -154,7 +154,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
                     <?php endif; ?>
                     <td class="t-center">
                         <!-- Editar -->
-                        <a href="/editar.php?id=<?php echo $registro['id']; ?>">
+                        <a href="/editar?id=<?php echo $registro['id']; ?>">
                             <i class="icono icono-editar fa-solid fa-pen-to-square"></i>
                         </a>
                         <!-- Eliminar -->
