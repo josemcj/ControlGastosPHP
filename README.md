@@ -3,7 +3,7 @@
 Permite registrar una cantidad específica de dinero y apartir de ahi crear, editar y eliminar gastos.
 **Puedes probarla tú mismo desde el [siguiente enlace](https://josemcj.000webhostapp.com/).**
 
-**Mira la versión de este proyecto en React. [Consulta el repositorio](https://github.com/josemcj/control-gastos-react) o [prueba directamente la aplicación](https://control-gastos-react-v2.netlify.app/). Implenta Tailwind CSS y Local Storage para la persistencia de datos.**
+**🎉 Mira la versión de este proyecto en React 🎉. [Consulta el repositorio](https://github.com/josemcj/control-gastos-react) o [prueba directamente la aplicación](https://control-gastos-react-v2.netlify.app/). Implementa Tailwind CSS y Local Storage para la persistencia de datos.**
 
 ## Configuración inicial del proyecto
 
